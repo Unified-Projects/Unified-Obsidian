@@ -18,6 +18,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "81ff8ff471a38d76",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6f3c8da313def5d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UnifiedOS/Building a basic UEFI Bootloader Using GNU-EFI!.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -83,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "UnifiedOS/Todo.md",
+                "file": "UnifiedOS/Building a basic UEFI Bootloader Using GNU-EFI!.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "UnifiedOS/Todo.md",
+                "file": "UnifiedOS/Building a basic UEFI Bootloader Using GNU-EFI!.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "UnifiedOS/Todo.md"
+                "file": "UnifiedOS/Building a basic UEFI Bootloader Using GNU-EFI!.md"
               }
             }
           }
@@ -137,12 +155,12 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "9861a1871f7c1141",
+  "active": "6f3c8da313def5d2",
   "lastOpenFiles": [
     "UnifiedOS/Todo.md",
+    "UnifiedOS/Building a basic UEFI Bootloader Using GNU-EFI!.md",
     "UnifiedOS/OSDesign.md",
     "UnifiedOS/Window Inspirations!.png",
-    "Build basic UEFI Bootloader Using GNU-EFI!.md",
     "Pasted Image 20221024172939_832.png",
     "Website/Website Drawing.md",
     "Website/Site.md",
