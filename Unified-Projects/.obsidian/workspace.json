@@ -4,18 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d0a8c1054ea9e1f7",
+        "id": "6b8e05021820f85c",
         "type": "tabs",
         "children": [
           {
-            "id": "0941a86099e4bd54",
+            "id": "9861a1871f7c1141",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "kanban",
               "state": {
-                "file": "Unified-Projects.md",
-                "mode": "source",
-                "source": false
+                "file": "UnifiedOS/Todo.md"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unified-Projects.md",
+                "file": "UnifiedOS/Todo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Unified-Projects.md",
+                "file": "UnifiedOS/Todo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unified-Projects.md"
+                "file": "UnifiedOS/Todo.md"
               }
             }
           }
@@ -139,11 +137,16 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "e81cb87ad0bc5a7e",
+  "active": "9861a1871f7c1141",
   "lastOpenFiles": [
+    "UnifiedOS/Todo.md",
+    "UnifiedOS/OSDesign.md",
+    "UnifiedOS/Window Inspirations!.png",
+    "Build basic UEFI Bootloader Using GNU-EFI!.md",
+    "Pasted Image 20221024172939_832.png",
     "Website/Website Drawing.md",
     "Website/Site.md",
-    "Website.md",
-    "Unified-Projects.md"
+    "Unified-Projects.md",
+    "Website.md"
   ]
 }
