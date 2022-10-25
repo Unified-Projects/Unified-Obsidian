@@ -27,6 +27,9 @@ Transition page must be retained
 over page movement so that it looks
 smooth ^7MZFksNt
 
+Put on Hold as current transition
+Will have to do as it will not take long to load a new page! ^rG5nXXrz
+
 %%
 # Drawing
 ```json
@@ -1437,6 +1440,41 @@ smooth ^7MZFksNt
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Transition page must be retained\nover page movement so that it looks\nsmooth"
+		},
+		{
+			"id": "rG5nXXrz",
+			"type": "text",
+			"x": 56.06948259141711,
+			"y": -169.37601004706488,
+			"width": 600,
+			"height": 51,
+			"angle": 0,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"strokeSharpness": "sharp",
+			"seed": 1876771238,
+			"version": 114,
+			"versionNonce": 62102970,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1666708362525,
+			"link": null,
+			"locked": false,
+			"text": "Put on Hold as current transition\nWill have to do as it will not take long to load a new page!",
+			"rawText": "Put on Hold as current transition\nWill have to do as it will not take long to load a new page!",
+			"fontSize": 20,
+			"fontFamily": 1,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"baseline": 44,
+			"containerId": null,
+			"originalText": "Put on Hold as current transition\nWill have to do as it will not take long to load a new page!"
 		}
 	],
 	"appState": {

@@ -6,13 +6,14 @@ kanban-plugin: basic
 
 ## Todo
 
-- [ ] [[Building a basic UEFI Bootloader Using GNU-EFI!]]
 - [ ] Load Basic Video Output and Font File
 - [ ] Display Hello World Message
 
 
 ## In the works
 
+- [ ] Setup UEFI Bootloader
+- [ ] Test Thingies
 
 
 ## Dunz
