@@ -6,19 +6,23 @@ kanban-plugin: basic
 
 ## Todo
 
-- [ ] Load Basic Video Output and Font File
-- [ ] Display Hello World Message
+- [ ] Basic Video Driver Implementation
+- [ ] Memory Manager
+- [ ] Heap Manager
+- [ ] Interrupts (Interrupt Descriptor Table)
+- [ ] Global Descriptor Table (GDT)!
 
 
 ## In the works
 
-- [ ] Setup UEFI Bootloader
-- [ ] Test Thingies
 
 
 ## Dunz
 
 **Complete**
+- [x] Setup UEFI Bootloader
+- [x] Load Basic Video Output and Font File (GOP)
+- [x] Test screen print
 
 
 ## Put aside
