@@ -23,15 +23,14 @@
             "id": "0f7654ae01121094",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Unified-Projects/UnifiedOS/Memory Ranges.md",
-                "mode": "source",
-                "source": false
+                "file": "Unified-Projects/UnifiedOS/Excalidraws/OS-Memory-Implementations.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unified-Projects/UnifiedOS/Drivers/Video Drivers.md",
+                "file": "Unified-Projects/UnifiedOS/Excalidraws/OS-Memory-Implementations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Unified-Projects/UnifiedOS/Drivers/Video Drivers.md",
+                "file": "Unified-Projects/UnifiedOS/Excalidraws/OS-Memory-Implementations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unified-Projects/UnifiedOS/Drivers/Video Drivers.md"
+                "file": "Unified-Projects/UnifiedOS/Excalidraws/OS-Memory-Implementations.md"
               }
             }
           }
@@ -148,7 +147,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "61a312a3d7b6c119",
+  "active": "314bbccec0bf64a1",
   "lastOpenFiles": [
     "Unified-Projects/UnifiedOS/Memory Ranges.md",
     "Unified-Projects/UnifiedOS/Drivers/Video Drivers.md",
