@@ -1,4 +1,4 @@
-Possible Plan to port to custom UEFI Bootloader again, but for the sake of compatability illl use GRUB.
+Possible Plan to port to custom UEFI Bootloader again, but for the sake of compatability I'll use GRUB.
 
 The kernel gets mapped to high virtual memory (```0xFFFFFFFF80000000```) as to allow full memory range for processes. Would be more important if on a 32 bit system.
 
@@ -60,7 +60,7 @@ GDT64Pointer:                    ; The GDT-pointer.
 ```
 
 ### CPU
-This section is quite important because it means that older generation CPU's will not be supported unless they support x86_64-V2 Extentions (SSE4 etc)
+This section is quite important because it means that older generation CPUs will not be supported unless they support x86_64-V2 Extentions (SSE4 etc)
 
 ```nasm TI="CPU-64-bit"
 mov rax, cr0
@@ -83,7 +83,7 @@ wrmsr
 ```
 
 ```nasm TI="Compiler Faults"
-global __cxa_atexit ; Would be defined by compiler but isnt in LLVM
+global __cxa_atexit ; Would be defined by compiler but isn't in LLVM
 __cxa_atexit:
   ret
 
@@ -93,6 +93,6 @@ stack_bottom:
 resb 32768
 stack_top:
 
-global __dso_handle ; Would be defined by compiler but isnt in LLVM
+global __dso_handle ; Would be defined by compiler but isn't in LLVM
 __dso_handle: resq 1
 ```

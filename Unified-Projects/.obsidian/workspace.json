@@ -11,9 +11,11 @@
             "id": "de0d2df30c259e2f",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Website/Website Drawing.md"
+                "file": "Unified-Projects.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Website/Website Drawing.md",
+                "file": "Unified-Projects.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Website/Website Drawing.md",
+                "file": "Unified-Projects.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,31 +125,29 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Website/Website Drawing.md"
+                "file": "Unified-Projects.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "ribbon": {
-    "mostRecentAction": ""
-  },
   "active": "e81cb87ad0bc5a7e",
   "lastOpenFiles": [
-    "UnifiedOS/OS-System-Implementations.md",
-    "UnifiedOS/OSDesign.md",
-    "UnifiedOS/Todo.md",
-    "UnifiedOS/Window Inspirations!.png",
     "Website/Website Drawing.md",
     "Website/Site.md",
-    "Unified-Projects.md",
-    "UnifiedOS/Architectural Stuff/Memory.md",
-    "UnifiedOS/Architectural Stuff/Boot - Scrapped!.md",
-    "UnifiedOS/Architectural Stuff/IDT (Interrupts).md"
+    "UnifiedOS/Todo.md",
+    "UnifiedOS/Memory Ranges.md",
+    "UnifiedOS/Excalidraws/OSDesign.md",
+    "UnifiedOS/Excalidraws/OS-Memory-Implementations.md",
+    "UnifiedOS/Drivers/Video Drivers.md",
+    "UnifiedOS/Architectural Stuff/UFEI Bootloader.md",
+    "UnifiedOS/Architectural Stuff/Scheduling.md",
+    "UnifiedOS/Architectural Stuff/Memory.md"
   ]
 }

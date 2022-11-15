@@ -1,4 +1,4 @@
-To boot into my os, I chose to skip doing the setting long mode and use a tool called GNU-EFI which is where you can code your own efi-tool or bootloader. This allows me to get all the information needed for my os (i.e the Graphics Output Protocol or the RSDP tables or Memory map) and pass them into my kernel using C.
+To boot into my OS, I chose to skip doing the setting long mode and use a tool called GNU-EFI which is helps you code your own EFI-tool or bootloader. This allows me to get all the information needed for my OS (i.e the Graphics Output Protocol or the RSDP tables or Memory map) and pass them into my kernel using C.
 
 ## Basic Kernel Loading
 ```C TI="Get File"
