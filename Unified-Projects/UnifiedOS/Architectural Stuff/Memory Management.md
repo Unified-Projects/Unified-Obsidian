@@ -1,0 +1,1 @@
+Idea links the the Excalidraw.
