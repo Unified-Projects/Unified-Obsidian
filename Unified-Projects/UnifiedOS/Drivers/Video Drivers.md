@@ -21,6 +21,9 @@ struct Surface
 	// Location (Will be mapped later to IO part and double buffered)
 	uint32_t* ScreenFront; // Actuall Screen address
 	uint32_t* ScreenBack; // Data written to
+	
+	// Instead of shifting we clear screen
+	bool QuickShift;
 };
 ```
 
@@ -30,5 +33,12 @@ Drawing text to the screen isn't too hard. As with my UEFI bootloader I have imp
 ## Shifting
 This is where the framebuffer shifts up to allow room for new characters to be placed in without completely removing the old lines. The method used is to count the number of newlines needed, shift the screen, then print the rest.
 
+**This can be slow on larger screens, so instead I added quick shift (Which will auto enable on screens bigger than 720p!) to clear the screen whever the bottom is reached!**
+
 ## Print Function
-Print function can only be implemented after memory management due to conversions to strings.
+The print function uses, I think, the standard formatting args. This is done using the standard stdarg header file with the toolchain, saving a lot of confusion in coding it. and to get arround the no memory management, I pre-defined buffers that it uses instead.
+
+```C++ TI="Print example"
+Video::Print("%x is %d in hex!", 123, 123);
+// Expected output: "0x7b is 123 in hex!"
+```
