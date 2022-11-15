@@ -1,4 +1,4 @@
-Possible Plan to port to custom UEFI Bootloader again, but for the sake of compatability I'll use GRUB.
+Decided not to use grub, this is because it's easier to understand.
 
 The kernel gets mapped to high virtual memory (```0xFFFFFFFF80000000```) as to allow full memory range for processes. Would be more important if on a 32 bit system.
 

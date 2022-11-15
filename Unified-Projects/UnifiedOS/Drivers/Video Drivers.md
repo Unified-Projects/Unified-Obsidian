@@ -25,13 +25,7 @@ struct Surface
 ```
 
 ## Text
-<<<<<<< Updated upstream
-Drawing text to the screen isnt too hard. As with my UEFI bootloader I have implemented a PSF Font file loader using its built in interpreter. This gives me access to the glyphed data for drawing to the screen. 
-
-### For now screen shifiting is not implemented so the screen will clear.
-=======
-Drawing text to the screen isnt too hard. As with my UEFI bootloader I have implemented a PSF Font file loader using its built in interpreter. This gives me access to the glyphed data for drawing to the screen.  If the text runs over the bottom of the screen or has a newline character that will do the same the screen shifts the buffer up to allow room for it.
->>>>>>> Stashed changes
+Drawing text to the screen isn't too hard. As with my UEFI bootloader I have implemented a PSF Font file loader using it's built in interpreter. This gives me access to the glyphed data for drawing to the screen.  If the text runs over the bottom of the screen or has a newline character that will do the same the screen shifts the buffer up to allow room for it.
 
 ## Shifting
 This is where the framebuffer shifts up to allow room for new characters to be placed in without completely removing the old lines. The method used is to count the number of newlines needed, shift the screen, then print the rest.
