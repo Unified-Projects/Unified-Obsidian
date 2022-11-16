@@ -6,15 +6,17 @@ kanban-plugin: basic
 
 ## Todo
 
-- [ ] Basic Video Driver Implementation
-- [ ] Memory Manager
-- [ ] Heap Manager
 - [ ] Interrupts (Interrupt Descriptor Table)
 - [ ] Global Descriptor Table (GDT)!
+- [ ] Page trap
 
 
 ## In the works
 
+- [ ] Memory Manager
+- [ ] Heap Manager
+- [ ] Virtual Allocator
+- [ ] Mapper
 
 
 ## Dunz
@@ -22,7 +24,9 @@ kanban-plugin: basic
 **Complete**
 - [x] Setup UEFI Bootloader
 - [x] Load Basic Video Output and Font File (GOP)
+- [x] Basic Video Driver Implementation
 - [x] Test screen print
+- [x] Physical Allocator
 
 
 ## Put aside

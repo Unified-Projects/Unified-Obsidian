@@ -1,7 +1,7 @@
 Idea links the the Excalidraw.
 
 ## Physical
-To controll what physical pages are in use we use a bitmap. Which is pretty simple to implement.
+To controll what physical pages are in use we use a bitmap. Which is pretty simple to implement. I just need to make sure that all IO is reserved and kernel space as this can cause issues is we allocate it to another process to overwrite.
 
 ## Virtual
 For mapping virtual memory, pages are used. These consist of tables that for each table there are 512 more tables before eventually reaching the actual page entry which can then have the physical address entered and a couple flags.
@@ -28,3 +28,8 @@ struct PageMap {
 ```
 
 ## Mapping
+
+## Page trap
+This is where we fault to whenever we receive a page fault. Here we check if we are a process or kernel. If we are kernel we panic the whole system. Otherwise we move to **reallocation** or if the memory was never a part of the process, page fault the process.
+
+**reallocation** - Allocate the physicall part of the allocated virtual memory (We didn't first because we want to save memory)
