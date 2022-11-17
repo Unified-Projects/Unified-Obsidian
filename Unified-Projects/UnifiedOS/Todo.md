@@ -9,6 +9,7 @@ kanban-plugin: basic
 - [ ] Interrupts (Interrupt Descriptor Table)
 - [ ] Global Descriptor Table (GDT)!
 - [ ] Page trap
+- [ ] Make Virtual Memory Page finder more optimised (By using Page*** and then accessing with [PDPT][{PD}][PT][Entry]])
 
 
 ## In the works
