@@ -43,3 +43,8 @@ Effectivley we just use the page table created in the virtual sections and place
 This is where we fault to whenever we receive a page fault. Here we check if we are a process or kernel. If we are kernel we panic the whole system. Otherwise we move to **reallocation** or if the memory was never a part of the process, page fault the process.
 
 >**reallocation** - Allocate the physicall part of the allocated virtual memory (We didn't first because we want to save memory)
+
+## Desire
+> **Now, I have a crappy memory implementation that definitley needs a rework. What I am doing is loading a program offsetted into memory, outside the physical memory to avoid issue with my page table. This is bad because you really should load a program at base 0x00 because of 32 bit systems seeing this as a problem. But in my case this is going to be pure 64-bit only, so im not going to worry. This probably will cause issues for me in the future.**
+
+I want to have my memory manager only map and use memory that is required. This allows me to load programs earlier on in the memory space.
