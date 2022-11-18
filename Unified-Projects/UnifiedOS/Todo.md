@@ -18,6 +18,7 @@ kanban-plugin: basic
 - [ ] Heap Manager
 - [ ] Virtual Allocator
 - [ ] Mapper
+- [ ] Move Page table creation to Virtual Namespace
 
 
 ## Dunz
