@@ -6,19 +6,22 @@ kanban-plugin: basic
 
 ## Todo
 
-- [ ] Global Descriptor Table (GDT)!
 - [ ] Page trap
 - [ ] Make Virtual Memory Page finder more optimised (By using Page*** and then accessing with [PDPT][{PD}][PT][Entry]])
 - [ ] Make sure that memory mapping is aware of the fact that we could run out of memory
 - [ ] Memory Map Creation/Forking/Deletion
+- [ ] Heap use heap memory space using virtual allocations!
+- [ ] Documentation of my IDT implementation
+- [ ] PIT
+- [ ] PCI reading
+- [ ] Basic Device with all features needed
+- [ ] AHCI / SATA Driver
+- [ ] APIC / SMP
+- [ ] Multiprocessing
 
 
 ## In the works
 
-- [ ] Map page table to virtual memory (To <br> prevent issues I can see that I will need to deal with soon!)
-- [ ] Memory Manager
-- [ ] Heap Manager
-- [ ] Interrupts (Interrupt Descriptor Table)
 
 
 ## Dunz
@@ -31,10 +34,15 @@ kanban-plugin: basic
 - [x] Physical Allocator
 - [x] Virtual Allocator
 - [x] Mapper
+- [x] Memory Manager
+- [x] Heap Manager
+- [x] Interrupts (Interrupt Descriptor Table)
+- [x] Global Descriptor Table (GDT)!
 
 
 ## Put aside
 
+- [ ] All my //TODOs
 
 
 
