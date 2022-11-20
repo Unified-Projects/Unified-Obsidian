@@ -97,3 +97,52 @@ Framebuffer* InitiliseGop(){
 	return &framebuffer;
 }
 ```
+
+# Kernel Entry
+We enter the kernel in assembly to setup some cpu flags and stack pointers that we can't really acomplish with c++.
+
+We start of by setting up the stack and intialising the bss
+``` NASM
+mov [BootInfoRecord], rdi
+
+mov rdi, _bss
+mov rcx, _bss_end
+sub rcx, _bss
+xor rax, rax
+rep stosb
+
+mov rsp, stack_top
+```
+
+Then we setup cpu flags and meory setup. We will use SSE4 functions se we set that flag aswel
+> **Note: This means that for cpu's not supporting SSE4 extentions / x86_64-V2 they are not supported in the OS**
+```NASM
+mov rax, cr0
+and ax, 0xFFFB      ; Clear coprocessor emulation
+or ax, 0x2          ; Set coprocessor monitoring
+mov cr0, rax
+
+;Enable SSE
+mov rax, cr4
+or ax, 3 << 9       ; Set flags for SSE
+mov cr4, rax
+
+mov rcx, 0x277 ; PAT Model Specific Register
+rdmsr
+mov rbx, 0xFFFFFFFFFFFFFF
+and rax, rbx
+mov rbx, 0x100000000000000
+or rax, rbx  ; Set PA7 to Write-combining (0x1, WC)
+wrmsr
+```
+
+We then restore the original boot argument of the boot info to the argmument 1 register and proceed to the actual kernel loading.
+```NASM
+mov rdi, [BootInfoRecord] ; Need to be restored
+    
+call kernel
+    
+; If exited
+cli
+hlt
+```

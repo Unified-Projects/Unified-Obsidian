@@ -12,16 +12,17 @@ kanban-plugin: basic
 - [ ] Memory Map Creation/Forking/Deletion
 - [ ] Heap use heap memory space using virtual allocations!
 - [ ] Documentation of my IDT implementation
-- [ ] PIT
 - [ ] PCI reading
-- [ ] Basic Device with all features needed
 - [ ] AHCI / SATA Driver
 - [ ] APIC / SMP
 - [ ] Multiprocessing
+- [ ] Syscalls
 
 
 ## In the works
 
+- [ ] Basic Device with all features needed for drivers and filesystem
+- [ ] Unix-Like filesystem implementation
 
 
 ## Dunz
@@ -38,6 +39,8 @@ kanban-plugin: basic
 - [x] Heap Manager
 - [x] Interrupts (Interrupt Descriptor Table)
 - [x] Global Descriptor Table (GDT)!
+- [x] PIT
+- [x] Setup Ctors
 
 
 ## Put aside
