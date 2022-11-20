@@ -7,11 +7,9 @@ kanban-plugin: basic
 ## Todo
 
 - [ ] Page trap
-- [ ] Make Virtual Memory Page finder more optimised (By using Page*** and then accessing with [PDPT][{PD}][PT][Entry]])
 - [ ] Make sure that memory mapping is aware of the fact that we could run out of memory
 - [ ] Memory Map Creation/Forking/Deletion
 - [ ] Heap use heap memory space using virtual allocations!
-- [ ] Documentation of my IDT implementation
 - [ ] PCI reading
 - [ ] AHCI / SATA Driver
 - [ ] APIC / SMP

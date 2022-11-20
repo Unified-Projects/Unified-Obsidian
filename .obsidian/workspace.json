@@ -11,15 +11,26 @@
             "id": "ecf7e15bfbd266b9",
             "type": "leaf",
             "state": {
+              "type": "kanban",
+              "state": {
+                "file": "Unified-Projects/UnifiedOS/Todo.md"
+              }
+            }
+          },
+          {
+            "id": "c629bddbd706c90f",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "Unified-Projects/UnifiedOS/Architectural Stuff/IDT (Interrupts).md",
+                "file": "Unified-Projects/UnifiedOS/Architectural Stuff/ACPI.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unified-Projects/UnifiedOS/Architectural Stuff/IDT (Interrupts).md",
+                "file": "Unified-Projects/UnifiedOS/Architectural Stuff/ACPI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Unified-Projects/UnifiedOS/Architectural Stuff/IDT (Interrupts).md",
+                "file": "Unified-Projects/UnifiedOS/Architectural Stuff/ACPI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unified-Projects/UnifiedOS/Architectural Stuff/IDT (Interrupts).md"
+                "file": "Unified-Projects/UnifiedOS/Architectural Stuff/ACPI.md"
               }
             }
           }
@@ -136,11 +147,11 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ecf7e15bfbd266b9",
+  "active": "c629bddbd706c90f",
   "lastOpenFiles": [
-    "Unified-Projects/UnifiedOS/Architectural Stuff/UFEI Bootloader and Setup.md",
-    "Unified-Projects/UnifiedOS/Architectural Stuff/IDT (Interrupts).md",
     "Unified-Projects/UnifiedOS/Todo.md",
+    "Unified-Projects/UnifiedOS/Architectural Stuff/IDT (Interrupts).md",
+    "Unified-Projects/UnifiedOS/Architectural Stuff/UFEI Bootloader and Setup.md",
     "Unified-Projects/UnifiedOS/Other/Untitled.md",
     "Unified-Projects/UnifiedOS/Architectural Stuff/Constructors.md",
     "Unified-Projects/UnifiedOS/Architectural Stuff/PIT (Programable Interval Timer).md",
