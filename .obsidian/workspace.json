@@ -11,26 +11,13 @@
             "id": "ecf7e15bfbd266b9",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "excalidraw",
               "state": {
-                "file": "Unified-Projects/UnifiedOS/Todo.md"
-              }
-            }
-          },
-          {
-            "id": "c629bddbd706c90f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Unified-Projects/UnifiedOS/Architectural Stuff/ACPI.md",
-                "mode": "source",
-                "source": false
+                "file": "Unified-Projects/Website/Website Drawing.md"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unified-Projects/UnifiedOS/Architectural Stuff/ACPI.md",
+                "file": "Unified-Projects/Website/Website Drawing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Unified-Projects/UnifiedOS/Architectural Stuff/ACPI.md",
+                "file": "Unified-Projects/Website/Website Drawing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unified-Projects/UnifiedOS/Architectural Stuff/ACPI.md"
+                "file": "Unified-Projects/Website/Website Drawing.md"
               }
             }
           }
@@ -147,17 +134,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c629bddbd706c90f",
+  "active": "ecf7e15bfbd266b9",
   "lastOpenFiles": [
+    "Unified-Projects/Unified-Projects.md",
+    "Unified-Projects/Website/Website Drawing.md",
+    "Unified-Projects/Website/Site.md",
+    "Unified-Projects/UnifiedOS/Window Inspirations!.png",
     "Unified-Projects/UnifiedOS/Todo.md",
-    "Unified-Projects/UnifiedOS/Architectural Stuff/IDT (Interrupts).md",
-    "Unified-Projects/UnifiedOS/Architectural Stuff/UFEI Bootloader and Setup.md",
-    "Unified-Projects/UnifiedOS/Other/Untitled.md",
-    "Unified-Projects/UnifiedOS/Architectural Stuff/Constructors.md",
-    "Unified-Projects/UnifiedOS/Architectural Stuff/PIT (Programable Interval Timer).md",
     "Unified-Projects/UnifiedOS/Memory Ranges.md",
-    "Unified-Projects/UnifiedOS/Other/Heap.md",
-    "Unified-Projects/UnifiedOS/Architectural Stuff/Memory Management.md",
-    "Unified-Projects/UnifiedOS/Architectural Stuff/Spinlocks.md"
+    "Unified-Projects/UnifiedOS/Drivers/Video Drivers.md",
+    "Unified-Projects/UnifiedOS/Architectural Stuff/UFEI Bootloader and Setup.md",
+    "Unified-Projects/UnifiedOS/Architectural Stuff/Spinlocks.md",
+    "Unified-Projects/UnifiedOS/Architectural Stuff/Scheduling.md"
   ]
 }

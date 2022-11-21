@@ -10,15 +10,16 @@ kanban-plugin: basic
 - [ ] Make sure that memory mapping is aware of the fact that we could run out of memory
 - [ ] Memory Map Creation/Forking/Deletion
 - [ ] Heap use heap memory space using virtual allocations!
-- [ ] PCI reading
 - [ ] AHCI / SATA Driver
 - [ ] APIC / SMP
 - [ ] Multiprocessing
 - [ ] Syscalls
+- [ ] Bring non 32 bpi video drivers into support using a colour conversion and proper setting
 
 
 ## In the works
 
+- [ ] PCI reading
 - [ ] Basic Device with all features needed for drivers and filesystem
 - [ ] Unix-Like filesystem implementation
 
