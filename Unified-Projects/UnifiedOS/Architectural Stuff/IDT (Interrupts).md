@@ -3,7 +3,7 @@ Interrupts are kind of a tool for getting the CPU's attention. This can either b
 There are two sections to interrupts, a manager and a handler.
 
 ## Manager
-This is where we intitialse the interrupts with a default handler and tell the system to start accepting these interrupts.
+This is where we initialise the interrupts with a default handler and tell the system to start accepting these interrupts.
 
 The system requires a table of descriptors which look like this:
 ```CPP
@@ -27,7 +27,7 @@ struct idt_pointer_t
 } __attribute__((packed));
 ```
 
-These will point to a assembly created code that configures register and stack variables before proceeding back to C++ for the handling of the interrup.
+These will point to a assembly created code that configures register and stack variables before proceeding back to C++ for the handling of the interrupt.
 
 ## Handler
 All this needs to be a basic function that takes two arguments, a data argument (For the interrupts that require one) and a register argument that holds the stack of the previous process pre interrupt.

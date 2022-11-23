@@ -33,10 +33,12 @@ Drawing text to the screen isn't too hard. As with my UEFI bootloader I have imp
 ## Shifting
 This is where the framebuffer shifts up to allow room for new characters to be placed in without completely removing the old lines. The method used is to count the number of newlines needed, shift the screen, then print the rest. This is quite processing heavy and is known to slow boot times. 
 
->**This can be slow on larger screens, so instead I added quick shift (Which will auto enable on screens bigger than 720p!) to clear the screen whever the bottom is reached! If desired I may make it toggleable on larger screens.**
+>**This can be slow on larger screens, so instead I added quick shift (Which will auto enable on screens bigger than 720p!) to clear the screen whenever the bottom is reached! If desired, I may make it toggleable on larger screens.**
+
+>**We need to be careful to cast the ScreenBack to an uint8_t* as when incrementing an uint32_t* by 1 we actually move the pointer 4 bytes (1 uint32_t word) forward which will cause issues.**
 
 ## Print Function
-The print function uses, I think, the standard formatting args. This is done using the standard stdarg header file with the toolchain, saving a lot of confusion in coding it. and to get arround the no memory management, I pre-defined buffers that it uses instead.
+The print function uses, I think, the standard formatting args. This is done using the standard stdarg header file with the toolchain, saving a lot of confusion in coding it. And to get around the no memory management, I pre-defined buffers that it uses instead.
 
 ```C++ TI="Print example"
 Video::Print("%x is %d in hex!", 123, 123);

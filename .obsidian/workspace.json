@@ -4,20 +4,45 @@
     "type": "split",
     "children": [
       {
-        "id": "258a1050d46f5fc5",
+        "id": "6f571f812f424782",
         "type": "tabs",
         "children": [
           {
-            "id": "ecf7e15bfbd266b9",
+            "id": "5ce2e0c566641389",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Unified-Projects/Website/Website Drawing.md"
+                "file": "Unified-Projects/UnifiedOS/Memory Ranges.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "58712b881b17d25f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Unified-Projects/UnifiedOS/Architectural Stuff/Memory Management.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8b8ce58774d00bce",
+            "type": "leaf",
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "Unified-Projects/UnifiedOS/Todo.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unified-Projects/Website/Website Drawing.md",
+                "file": "Unified-Projects/UnifiedOS/Architectural Stuff/Memory Management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Unified-Projects/Website/Website Drawing.md",
+                "file": "Unified-Projects/UnifiedOS/Architectural Stuff/Memory Management.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unified-Projects/Website/Website Drawing.md"
+                "file": "Unified-Projects/UnifiedOS/Architectural Stuff/Memory Management.md"
               }
             }
           }
@@ -134,17 +159,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ecf7e15bfbd266b9",
+  "active": "58712b881b17d25f",
   "lastOpenFiles": [
-    "Unified-Projects/Unified-Projects.md",
-    "Unified-Projects/Website/Website Drawing.md",
-    "Unified-Projects/Website/Site.md",
-    "Unified-Projects/UnifiedOS/Window Inspirations!.png",
     "Unified-Projects/UnifiedOS/Todo.md",
     "Unified-Projects/UnifiedOS/Memory Ranges.md",
+    "Unified-Projects/UnifiedOS/Architectural Stuff/Memory Management.md",
+    "Unified-Projects/UnifiedOS/Architectural Stuff/PCI.md",
+    "Unified-Projects/UnifiedOS/Window Inspirations!.png",
+    "Unified-Projects/UnifiedOS/Other/Heap.md",
+    "Unified-Projects/UnifiedOS/Excalidraws/OS-Memory-Implementations.md",
+    "Unified-Projects/UnifiedOS/Excalidraws/OSDesign.md",
     "Unified-Projects/UnifiedOS/Drivers/Video Drivers.md",
-    "Unified-Projects/UnifiedOS/Architectural Stuff/UFEI Bootloader and Setup.md",
-    "Unified-Projects/UnifiedOS/Architectural Stuff/Spinlocks.md",
-    "Unified-Projects/UnifiedOS/Architectural Stuff/Scheduling.md"
+    "Unified-Projects/UnifiedOS/Architectural Stuff/UFEI Bootloader and Setup.md"
   ]
 }

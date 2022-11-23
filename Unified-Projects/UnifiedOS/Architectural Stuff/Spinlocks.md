@@ -1,4 +1,4 @@
-This are a way of blocking code from being run multiple times at once. This is mainly important when writing to disks and allocating memory as we dont want to access the same position at once.
+This are a way of blocking code from being run multiple times at once. This is mainly important when writing to disks and allocating memory as we don't want to access the same position at once.
 
 They make use of the compilers atomic features.
 ```CPP TI="EG"
