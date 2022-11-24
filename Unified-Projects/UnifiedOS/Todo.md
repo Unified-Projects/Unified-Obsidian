@@ -16,13 +16,12 @@ kanban-plugin: basic
 - [ ] Make memory space allocations more faster by implementing a bitmap sort of operation when the memory space reaches the endpoint.
 - [ ] Basic Device with all features needed for drivers and filesystem
 - [ ] Unix-Like filesystem implementation
+- [ ] Virtual memory freeing
 
 
 ## In the works
 
 - [ ] Memory Map Creation/Forking/Deletion
-- [ ] Heap use heap memory space using virtual allocations!
-- [ ] Setup Virtual Memory Allocations Using memory spaces
 
 
 ## Dunz
@@ -39,10 +38,14 @@ kanban-plugin: basic
 - [x] Heap Manager
 - [x] Interrupts (Interrupt Descriptor Table)
 - [x] Global Descriptor Table (GDT)!
+- [x] Setup Virtual Memory Allocations Using memory spaces
 - [x] PIT
 - [x] Fixed Kernel Booting to configure stack
 - [x] Setup Ctors
 - [x] PCI reading
+- [x] Check if a pointer is within a page table
+- [x] Heap use heap memory space using virtual allocations!
+- [x] Find physical address from virtual
 
 
 ## Put aside
