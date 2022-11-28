@@ -8,20 +8,24 @@ kanban-plugin: basic
 
 - [ ] Page trap
 - [ ] Make sure that memory mapping is aware of the fact that we could run out of memory
-- [ ] AHCI / SATA Driver
 - [ ] APIC / SMP
 - [ ] Multiprocessing
 - [ ] Syscalls
 - [ ] Bring non 32 bpi video drivers into support using a colour conversion and proper setting
 - [ ] Make memory space allocations more faster by implementing a bitmap sort of operation when the memory space reaches the endpoint.
-- [ ] Basic Device with all features needed for drivers and filesystem
 - [ ] Unix-Like filesystem implementation
-- [ ] Virtual memory freeing
+- [ ] Double Buffer Screen To improve performance and reduce screen tearing!
+- [ ] Document things like Vector, List, TTraits, Assert So I Have notes!
+- [ ] Screen Scrolling seems to cause occasional crashes (presumably writing outside of memory range)
+- [ ] Character buffers
+- [ ] Remove a device on deinitialization (Think of a USB device being detached but marked as present!)
+- [ ] With resolving a node, make sure to add the directory nodes to the tree and increment their handles to 1. I will need to close after each usage tho!
 
 
 ## In the works
 
 - [ ] Memory Map Creation/Forking/Deletion
+- [ ] Basic Device with all features needed for drivers and filesystem
 
 
 ## Dunz
@@ -30,6 +34,7 @@ kanban-plugin: basic
 - [x] Setup UEFI Bootloader
 - [x] Load Basic Video Output and Font File (GOP)
 - [x] Basic Video Driver Implementation
+- [x] AHCI / SATA Driver
 - [x] Test screen print
 - [x] Physical Allocator
 - [x] Virtual Allocator
@@ -51,6 +56,7 @@ kanban-plugin: basic
 ## Put aside
 
 - [ ] All my //TODOs
+- [ ] Virtual memory freeing
 
 
 

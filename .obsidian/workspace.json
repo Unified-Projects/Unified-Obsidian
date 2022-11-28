@@ -11,36 +11,38 @@
             "id": "5ce2e0c566641389",
             "type": "leaf",
             "state": {
+              "type": "kanban",
+              "state": {
+                "file": "Unified-Projects/UnifiedOS/Todo.md"
+              }
+            }
+          },
+          {
+            "id": "9aff82c5575c2a9a",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "Unified-Projects/UnifiedOS/Memory Ranges.md",
+                "file": "Unified-Projects/UnifiedOS/Other/FAT32.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "58712b881b17d25f",
+            "id": "a0f9ac578ef99bee",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Unified-Projects/UnifiedOS/Excalidraws/CPU-Management and Scheduling.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "8b8ce58774d00bce",
-            "type": "leaf",
-            "state": {
-              "type": "kanban",
-              "state": {
-                "file": "Unified-Projects/UnifiedOS/Todo.md"
+                "file": "Unified-Projects/UnifiedOS/Other/Filesystem.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Unified-Projects/UnifiedOS/Todo.md",
+                "file": "Unified-Projects/UnifiedOS/Other/FAT32.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Unified-Projects/UnifiedOS/Todo.md",
+                "file": "Unified-Projects/UnifiedOS/Other/FAT32.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unified-Projects/UnifiedOS/Todo.md"
+                "file": "Unified-Projects/UnifiedOS/Other/FAT32.md"
               }
             }
           }
@@ -157,17 +159,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8b8ce58774d00bce",
+  "active": "9aff82c5575c2a9a",
   "lastOpenFiles": [
-    "Unified-Projects/UnifiedOS/Memory Ranges.md",
     "Unified-Projects/UnifiedOS/Todo.md",
+    "Unified-Projects/UnifiedOS/Other/FAT32.md",
+    "Unified-Projects/UnifiedOS/Other/Filesystem.md",
+    "Unified-Projects/UnifiedOS/Memory Ranges.md",
+    "Unified-Projects/UnifiedOS/Architectural Stuff/AHCI - SATA Driver.md",
+    "Unified-Projects/UnifiedOS/Other/Partitions.md",
+    "Unified-Projects/UnifiedOS/Excalidraws/Filesystem.excalidraw.md",
     "Unified-Projects/UnifiedOS/Excalidraws/CPU-Management and Scheduling.excalidraw.md",
     "Unified-Projects/UnifiedOS/Architectural Stuff/Memory Management.md",
-    "Unified-Projects/UnifiedOS/Architectural Stuff/PCI.md",
-    "Unified-Projects/UnifiedOS/Window Inspirations!.png",
-    "Unified-Projects/UnifiedOS/Other/Heap.md",
-    "Unified-Projects/UnifiedOS/Excalidraws/OS-Memory-Implementations.md",
-    "Unified-Projects/UnifiedOS/Excalidraws/OSDesign.md",
-    "Unified-Projects/UnifiedOS/Drivers/Video Drivers.md"
+    "Unified-Projects/UnifiedOS/Architectural Stuff/PCI.md"
   ]
 }
