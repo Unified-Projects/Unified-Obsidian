@@ -6,4 +6,10 @@ This is a site of how I separate the memory space into sections for my os to uti
 ## 0x80 0000 0000 - 0x100 0000 0000 (PML4 Entry 1)
 >This is kernel allocation space, not specifically for processes (they have there own) this is so that the frigg allocator only allocates a virtual address to not interrupt physical.
 
+## 0x100 0000 0000 - 0x180 0000 0000 (PML4 Entry 2)
+
+## 0x180 0000 0000 - 0x200 0000 0000 (PML4 Entry 3)
+
+## 0x200 0000 0000 - 0x280 0000 0000 (PML4 Entry 4)
+
 # IF MEMORY ISSUES OCOUR IT IS MOST LIKELY THE PAGEMAP TRYING TO ACCESS MEMORY THAT IS NOT MAPPED!

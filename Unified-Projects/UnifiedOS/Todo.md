@@ -10,7 +10,6 @@ kanban-plugin: basic
 - [ ] Make sure that memory mapping is aware of the fact that we could run out of memory
 - [ ] APIC / SMP
 - [ ] Multiprocessing
-- [ ] Syscalls
 - [ ] Bring non 32 bpi video drivers into support using a colour conversion and proper setting
 - [ ] Make memory space allocations more faster by implementing a bitmap sort of operation when the memory space reaches the endpoint.
 - [ ] Unix-Like filesystem implementation
@@ -20,12 +19,29 @@ kanban-plugin: basic
 - [ ] Character buffers
 - [ ] Remove a device on deinitialization (Think of a USB device being detached but marked as present!)
 - [ ] With resolving a node, make sure to add the directory nodes to the tree and increment their handles to 1. I will need to close after each usage tho!
+- [ ] Syscall list
+- [ ] IPC - Messages
+- [ ] IPC - Endpoints
+- [ ] Signal handleing
+
+
+## Syscalls
+
+- [ ] SYS_READ
+- [ ] SYS_OPEN
+- [ ] SYS_WRITE
+- [ ] SYS_STAT
+- [ ] SYS_YEILD
+- [ ] SYS_EXEC
+- [ ] SYS_DEBUG
+- [ ] SYS_CLOSE
+- [ ] SYS_FSTAT
 
 
 ## In the works
 
 - [ ] Memory Map Creation/Forking/Deletion
-- [ ] Basic Device with all features needed for drivers and filesystem
+- [ ] Document APIC
 
 
 ## Dunz
@@ -45,6 +61,7 @@ kanban-plugin: basic
 - [x] Global Descriptor Table (GDT)!
 - [x] Setup Virtual Memory Allocations Using memory spaces
 - [x] PIT
+- [x] Basic Device with all features needed for drivers and filesystem
 - [x] Fixed Kernel Booting to configure stack
 - [x] Setup Ctors
 - [x] PCI reading
