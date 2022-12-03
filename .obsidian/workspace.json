@@ -11,19 +11,9 @@
             "id": "5ce2e0c566641389",
             "type": "leaf",
             "state": {
-              "type": "kanban",
-              "state": {
-                "file": "Unified-Projects/UnifiedOS/Todo.md"
-              }
-            }
-          },
-          {
-            "id": "9aff82c5575c2a9a",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "Unified-Projects/UnifiedOS/Other/FAT32.md",
+                "file": "Unified-Projects/UnifiedOS/Architectural Stuff/Scheduling.md",
                 "mode": "source",
                 "source": false
               }
@@ -33,27 +23,26 @@
             "id": "a0f9ac578ef99bee",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "kanban",
               "state": {
-                "file": "Unified-Projects/UnifiedOS/Memory Ranges.md",
-                "mode": "source",
-                "source": false
+                "file": "Unified-Projects/UnifiedOS/Todo.md"
               }
             }
           },
           {
-            "id": "3055829c9f4539eb",
+            "id": "bcd4c734e1ed5b1a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Unified-Projects/UnifiedOS/Architectural Stuff/APIC.md",
+                "file": "Unified-Projects/UnifiedOS/Architectural Stuff/SMP.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,17 +159,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5ce2e0c566641389",
+  "active": "a0f9ac578ef99bee",
   "lastOpenFiles": [
-    "Unified-Projects/UnifiedOS/Architectural Stuff/APIC.md",
-    "Unified-Projects/UnifiedOS/Todo.md",
-    "Unified-Projects/UnifiedOS/Architectural Stuff/ACPI.md",
-    "Unified-Projects/UnifiedOS/Excalidraws/CPU-Management and Scheduling.excalidraw.md",
-    "Unified-Projects/UnifiedOS/Excalidraws/Filesystem.excalidraw.md",
-    "Unified-Projects/UnifiedOS/Excalidraws/OS-Memory-Implementations.md",
+    "Unified-Projects/UnifiedOS/Other/Partitions.md",
     "Unified-Projects/UnifiedOS/Other/FAT32.md",
-    "Unified-Projects/UnifiedOS/Memory Ranges.md",
     "Unified-Projects/UnifiedOS/Other/Filesystem.md",
-    "Unified-Projects/UnifiedOS/Architectural Stuff/AHCI - SATA Driver.md"
+    "Unified-Projects/UnifiedOS/Other/Heap.md",
+    "Unified-Projects/UnifiedOS/Memory Ranges.md",
+    "Unified-Projects/UnifiedOS/Architectural Stuff/SMP.md",
+    "Unified-Projects/UnifiedOS/Architectural Stuff/Scheduling.md",
+    "Unified-Projects/UnifiedOS/Drivers/Video Drivers.md",
+    "Unified-Projects/UnifiedOS/Todo.md",
+    "Unified-Projects/UnifiedOS/Architectural Stuff/Boot - Scrapped!.md"
   ]
 }

@@ -44,3 +44,7 @@ The print function uses, I think, the standard formatting args. This is done usi
 Video::Print("%x is %d in hex!", 123, 123);
 // Expected output: "0x7b is 123 in hex!"
 ```
+
+> **NOTE THAT THE SCREEN MAY BE MESSED UP WITH PRINT FUNCTION AND THE SYSTEM MAY FAULT. THIS IS CAUSED BY THE PRINT FUNCTION ACCESING THE SAME BUFFER AT THE SAME TIME! FIX MAY BE NEEDING TO ALLOCATE MEMORY FOR EACH RUN AND THEN FREE IT!
+
+> Double buffering creates efficiency in reading from screen buffer
