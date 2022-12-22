@@ -1,0 +1,3 @@
+For a standardised C library I will use this, it is POSIX compliant (For the most part) and comes with a dynamic linker which is good for memory usage.
+
+> Some issues that may be related to the toolchain or my setup with mlibc or my kernel. But the always inline functions do not work and cause serious stack problems, to the point that dummy functions actually restore the functionality with syscalls.

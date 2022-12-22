@@ -1,0 +1,3 @@
+A higher kernel is when the actual kernel data and program stuff gets mapped to the memory address 0xFFFF 0000 0000 0000 so that the entire sub memory space is actually available for the processes to make use of.
+
+In order to do this, there needs to be two stages to the kernel. One stage that sets up a basic page table and does the mapping of the higher kernel, and then a second stage that actually is the kernel and frees up the lower half of the kernel to be used as normal memory. However, the physical address of the higher kernel needs to be above 0x10000 as the 16-bit SMP Setup will make use of it.

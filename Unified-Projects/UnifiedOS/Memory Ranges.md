@@ -10,6 +10,8 @@ This is a site of how I separate the memory space into sections for my os to uti
 
 ## 0x180 0000 0000 - 0x200 0000 0000 (PML4 Entry 3)
 
-## 0x200 0000 0000 - 0x280 0000 0000 (PML4 Entry 4)
+## 0x200 0000 0000 - 0x280 0000 0000 (PML4 Entry 4) Allocator Memory Space
+> Allocator Memory Space
+
 
 # IF MEMORY ISSUES OCOUR IT IS MOST LIKELY THE PAGEMAP TRYING TO ACCESS MEMORY THAT IS NOT MAPPED!

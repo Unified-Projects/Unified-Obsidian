@@ -1,0 +1,1 @@
+The bases for a standardised library and interaction between a process and the main kernel, they can be ran at any time and rely on interrupts (Or a specific opcode when enabled to do so) and perform specific tasks such as reading a file.

@@ -51,6 +51,6 @@ uint64_t kernelStack;
 ## Scheduler
 This manages all the processes and threads that run on each cpu core. We call the scheduler either through the use of interrupts (For other cores) or (on the main core) we use the PIT device to tell the scheduler to tick (Which will send the interrupts to the other cores). Here we move current process to stack (Unless its the idle process) and then proceed to get a new process and load it, or move onto the next thread on the process.
 
->Note: The scheduler uses one main stack (Instead of one per core) this means I don't need to create a load balancer but means we cannot schedule two cores simultaneously and so eventually the cores go out of sync by offsets of like 1 tick.
+>Note: The scheduler uses one main stack (Instead of one per core) this means I don't need to create a load balancer but means we cannot schedule two cores simultaneously and so eventually the cores go out of sync by offsets of like 1 tick. This may come to bite me later.
 
 The scheduler is also responsible for removing dying threads and processes.
