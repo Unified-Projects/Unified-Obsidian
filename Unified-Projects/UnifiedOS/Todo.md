@@ -12,7 +12,6 @@ kanban-plugin: basic
 - [ ] Make memory space allocations more faster by implementing a bitmap sort of operation when the memory space reaches the endpoint.
 - [ ] Double Buffer Screen To improve performance and reduce screen tearing!
 - [ ] Document things like Vector, List, TTraits, Assert So I Have notes!
-- [ ] Screen Scrolling seems to cause occasional crashes (presumably writing outside of memory range)
 - [ ] Character buffers
 - [ ] Remove a device on deinitialization (Think of a USB device being detached but marked as present!)
 - [ ] With resolving a node, make sure to add the directory nodes to the tree and increment their handles to 1. I will need to close after each usage tho!
@@ -23,6 +22,7 @@ kanban-plugin: basic
 - [ ] Memory Map Deletion
 - [ ] Fix filesystem node closing
 - [ ] Fix filesystem multiple sections  to path (Daemon)
+- [ ] Ensure we unmap the initial PML4 (fre it)
 
 
 ## Syscalls
@@ -30,31 +30,30 @@ kanban-plugin: basic
 - [ ] SYS_STAT
 - [ ] SYS_YEILD
 - [ ] SYS_EXEC
-- [ ] SYS_DEBUG
-- [ ] SYS_CLOSE
 - [ ] SYS_FSTAT
-- [ ] SYS_MMAP
+- [ ] SYS_CLOSE
 - [ ] SYS_
 
 
 ## In the works
 
 - [ ] Syscall list
-- [ ] Process Allocator
-- [ ] ELF Reading
-- [ ] Normal Processes
 
 
 ## Dunz
 
 **Complete**
 - [x] Setup UEFI Bootloader
+- [x] Process Allocator
+- [x] ELF Reading
+- [x] Normal Processes
 - [x] Load Basic Video Output and Font File (GOP)
 - [x] Basic Video Driver Implementation
 - [x] AHCI / SATA Driver
 - [x] Test screen print
 - [x] Physical Allocator
 - [x] Virtual Allocator
+- [x] Screen Scrolling seems to cause occasional crashes (presumably writing outside of memory range)
 - [x] Memory Map Creation/Forking
 - [x] Mapper
 - [x] Memory Manager
@@ -68,20 +67,27 @@ kanban-plugin: basic
 - [x] Setup Virtual Memory Allocations Using memory spaces
 - [x] PIT
 - [x] Basic Device with all features needed for drivers and filesystem
+- [x] Higher Kernel
 - [x] Fixed Kernel Booting to configure stack
 - [x] Setup Ctors
 - [x] PCI reading
 - [x] Check if a pointer is within a page table
 - [x] Heap use heap memory space using virtual allocations!
 - [x] Find physical address from virtual
+- [x] Setup serial output
 
 
 ## Syscalls Completed
 
 **Complete**
+- [x] SYS_DEBUG
 - [x] SYS_READ
 - [x] SYS_OPEN
 - [x] SYS_WRITE
+- [x] SYS_MMAP
+- [x] SYS_GETTID
+- [x] SYS_LSEEK
+- [x] SYS_SETFSBASE
 
 
 ## Put aside

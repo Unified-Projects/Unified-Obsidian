@@ -31,11 +31,7 @@ We rely on our APIC code for this, we use its Send_IPI function which sends a in
 
 ## SMP Core
 Now for the smp code we need to be able to start in 16-bit addressing. This is because all cpu's start in 16-bit. This requires extra waste code as a part of the kernel, ensuring that we don't overwrite some kernel code in the process of loading the smp.
-```NASM
-section .padder ; Required Padding to give room for the SMP trampoline space to go
-align 64
-resb 0xFFFF ; 64KiB and max 16-bit address
-```
-> .padder is defined in our linker script to be at the verry begging of the kernel.
+
+> We start the kernels data at an offset of 0x10000 into memory to provide space for the SMP to use
 
 The rest of the initiation is similar to how we initiated on our current kernel. (Load GDT, Load page map, load IDT). Then proceed to halt until we setup processes.

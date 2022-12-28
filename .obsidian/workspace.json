@@ -15,9 +15,9 @@
               "state": {
                 "file": "Unified-Projects/UnifiedOS/OS Canvas.canvas",
                 "viewState": {
-                  "x": 407.69426780244396,
-                  "y": 115.97661638295926,
-                  "zoom": -2.5,
+                  "x": 97.14706140365661,
+                  "y": -432.0043668350503,
+                  "zoom": -1,
                   "snapToGrid": false
                 }
               }
@@ -153,15 +153,15 @@
   },
   "active": "a0f9ac578ef99bee",
   "lastOpenFiles": [
-    "Unified-Projects/UnifiedOS/Architectural Stuff/Higher Kenel.md",
+    "Unified-Projects/UnifiedOS/Architectural Stuff/Serial.md",
     "Unified-Projects/UnifiedOS/OS Canvas.canvas",
+    "Unified-Projects/UnifiedOS/Todo.md",
+    "Unified-Projects/UnifiedOS/Architectural Stuff/Higher Kenel.md",
     "Unified-Projects/UnifiedOS/Processes/Libraries/MLibc.md",
     "Unified-Projects/UnifiedOS/Untitled.md",
     "Unified-Projects/UnifiedOS/Architectural Stuff/Syscalls.md",
     "download.svg",
     "Unified-Projects/UnifiedOS/Memory Ranges.md",
-    "Unified-Projects/UnifiedOS/Architectural Stuff/ACPI.md",
-    "Unified-Projects/UnifiedOS/Todo.md",
-    "Unified-Projects/UnifiedOS/Architectural Stuff/Scheduling.md"
+    "Unified-Projects/UnifiedOS/Architectural Stuff/ACPI.md"
   ]
 }

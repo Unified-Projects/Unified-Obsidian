@@ -101,20 +101,34 @@ Framebuffer* InitiliseGop(){
 # Kernel Entry
 We enter the kernel in assembly to setup some cpu flags and stack pointers that we can't really acomplish with c++.
 
-We start of by setting up the stack and intialising the bss
+We first initialise the PML4 for higher half kernel inits.
 ``` NASM
-mov [BootInfoRecord], rdi
+    ;# Prepare an identity mapped Page Map Level One (PML1)
 
-mov rdi, _bss
-mov rcx, _bss_end
-sub rcx, _bss
-xor rax, rax
-rep stosb
+    mov rax, V2P(prekernel_pml1)
 
-mov rsp, stack_top
+%assign i 0
+
+%rep ENTRIES_PER_PAGE_TABLE
+
+    mov QWORD [rax], (i << 12) + (PAGE_PRESENT | PAGE_READ_WRITE | PAGE_GLOBAL)
+
+    add rax, 8
+
+%assign i i+1
+
+%endrep
+
+  
+
+    ;# Load prekernel Page Map Level Four (PML4).
+
+    mov rax, V2P(prekernel_pml4)
+
+    mov cr3, rax
 ```
 
-Then we setup cpu flags and meory setup. We will use SSE4 functions se we set that flag aswel
+We setup cpu flags and meory setup. We will use SSE4 functions se we set that flag aswel
 > **Note: This means that for cpu's not supporting SSE4 extentions / x86_64-V2 they are not supported in the OS**
 ```NASM
 mov rax, cr0
@@ -136,13 +150,25 @@ or rax, rbx  ; Set PA7 to Write-combining (0x1, WC)
 wrmsr
 ```
 
-We then restore the original boot argument of the boot info to the argmument 1 register and proceed to the actual kernel loading.
+We need to copy the memory map and boot info into the stack for actual access in the kernel (As we only map 2MiB of physical memory and the bootloader tends to stick stuff at the end of memory)
 ```NASM
-mov rdi, [BootInfoRecord] ; Need to be restored
-    
-call kernel
-    
-; If exited
-cli
-hlt
+;# Copy boot info structure.
+mov rcx, 64
+mov rsi, rdi
+mov rdi, V2P(boot_info)
+cld
+rep movsb
+
+;# Copy EFI Memory Map to prekernel stack, update pointer in boot info.
+;# Map size in 8 bytes is at boot_info + 24
+mov rcx, QWORD [V2P(boot_info) + 24] ; RCX = total map size in bytes
+sub rsp, rcx
+mov rsi, QWORD [V2P(boot_info) + 16]
+mov rdx, rsp
+mov rdi, rsp
+cld
+rep movsb
+mov rax, 0xffffffff80000000
+add rdx, rax
+mov QWORD [V2P(boot_info) + 16], rdx
 ```
